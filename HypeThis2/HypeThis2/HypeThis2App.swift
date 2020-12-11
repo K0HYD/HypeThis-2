@@ -11,7 +11,11 @@ import SwiftUI
 struct HypeThis2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .onAppear {
+                    DataController.shared.loadData()
+                    DataController.shared.getDiscoverEvents()
+                }
         }
     }
 }

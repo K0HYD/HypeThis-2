@@ -3,23 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0FDC52AC258349EE0017D736 /* HypeThis2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52AB258349EE0017D736 /* HypeThis2App.swift */; };
-		0FDC52AE258349EE0017D736 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52AD258349EE0017D736 /* ContentView.swift */; };
-		0FDC52B0258349EF0017D736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC52AF258349EF0017D736 /* Assets.xcassets */; };
-		0FDC52B3258349EF0017D736 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC52B2258349EF0017D736 /* Preview Assets.xcassets */; };
+		0FDC52C225834C240017D736 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52C025834C230017D736 /* DataController.swift */; };
+		0FDC52C325834C240017D736 /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52C125834C230017D736 /* HypedEvent.swift */; };
+		0FDC52C725834D360017D736 /* HypeThisTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52C625834D360017D736 /* HypeThisTabView.swift */; };
+		0FDC52CB25834DF90017D736 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 0FDC52CA25834DF90017D736 /* SwiftDate */; };
+		0FDC52CF25834E380017D736 /* UIColor_Hex_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FDC52CE25834E380017D736 /* UIColor_Hex_Swift */; };
+		0FDC52E225834FA50017D736 /* HypedEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52D725834FA50017D736 /* HypedEventListView.swift */; };
+		0FDC52E325834FA50017D736 /* HypedEventTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52D825834FA50017D736 /* HypedEventTileView.swift */; };
+		0FDC52E425834FA50017D736 /* HypedEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52D925834FA50017D736 /* HypedEventDetailView.swift */; };
+		0FDC52E525834FA50017D736 /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52DA25834FA50017D736 /* PastView.swift */; };
+		0FDC52E625834FA50017D736 /* HypeThisSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52DB25834FA50017D736 /* HypeThisSidebarView.swift */; };
+		0FDC52E725834FA50017D736 /* CreateHypedEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52DC25834FA50017D736 /* CreateHypedEventView.swift */; };
+		0FDC52E825834FA50017D736 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52DD25834FA50017D736 /* ImagePicker.swift */; };
+		0FDC52E925834FA50017D736 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52DE25834FA50017D736 /* DiscoverView.swift */; };
+		0FDC52EA25834FA50017D736 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52DF25834FA50017D736 /* UpcomingView.swift */; };
+		0FDC52EB25834FA50017D736 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52E025834FA50017D736 /* MainView.swift */; };
+		0FDC52EC25834FA50017D736 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52E125834FA50017D736 /* FormLabelView.swift */; };
+		0FDC52F52583543A0017D736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC52F42583543A0017D736 /* Assets.xcassets */; };
+		0FDC52F9258354650017D736 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC52F8258354650017D736 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FDC52A8258349EE0017D736 /* HypeThis2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeThis2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDC52AB258349EE0017D736 /* HypeThis2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeThis2App.swift; sourceTree = "<group>"; };
-		0FDC52AD258349EE0017D736 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0FDC52AF258349EF0017D736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0FDC52B2258349EF0017D736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0FDC52B4258349EF0017D736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDC52C025834C230017D736 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0FDC52C125834C230017D736 /* HypedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
+		0FDC52C625834D360017D736 /* HypeThisTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypeThisTabView.swift; sourceTree = "<group>"; };
+		0FDC52D725834FA50017D736 /* HypedEventListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypedEventListView.swift; sourceTree = "<group>"; };
+		0FDC52D825834FA50017D736 /* HypedEventTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypedEventTileView.swift; sourceTree = "<group>"; };
+		0FDC52D925834FA50017D736 /* HypedEventDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypedEventDetailView.swift; sourceTree = "<group>"; };
+		0FDC52DA25834FA50017D736 /* PastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
+		0FDC52DB25834FA50017D736 /* HypeThisSidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypeThisSidebarView.swift; sourceTree = "<group>"; };
+		0FDC52DC25834FA50017D736 /* CreateHypedEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHypedEventView.swift; sourceTree = "<group>"; };
+		0FDC52DD25834FA50017D736 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0FDC52DE25834FA50017D736 /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		0FDC52DF25834FA50017D736 /* UpcomingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		0FDC52E025834FA50017D736 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0FDC52E125834FA50017D736 /* FormLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
+		0FDC52F42583543A0017D736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FDC52F8258354650017D736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FDC52FB258354A10017D736 /* HypeThisiOSWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypeThisiOSWidgetExtension.entitlements; sourceTree = "<group>"; };
+		0FDC52FC258354B40017D736 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDC52CF25834E380017D736 /* UIColor_Hex_Swift in Frameworks */,
+				0FDC52CB25834DF90017D736 /* SwiftDate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,19 +83,49 @@
 		0FDC52AA258349EE0017D736 /* HypeThis2 */ = {
 			isa = PBXGroup;
 			children = (
+				0FDC52F42583543A0017D736 /* Assets.xcassets */,
+				0FDC52BF25834C230017D736 /* Data */,
+				0FDC52F7258354650017D736 /* Preview Content */,
+				0FDC52D625834FA50017D736 /* Views */,
 				0FDC52AB258349EE0017D736 /* HypeThis2App.swift */,
-				0FDC52AD258349EE0017D736 /* ContentView.swift */,
-				0FDC52AF258349EF0017D736 /* Assets.xcassets */,
-				0FDC52B4258349EF0017D736 /* Info.plist */,
-				0FDC52B1258349EF0017D736 /* Preview Content */,
+				0FDC52C625834D360017D736 /* HypeThisTabView.swift */,
+				0FDC52FC258354B40017D736 /* Info.plist */,
+				0FDC52FB258354A10017D736 /* HypeThisiOSWidgetExtension.entitlements */,
 			);
 			path = HypeThis2;
 			sourceTree = "<group>";
 		};
-		0FDC52B1258349EF0017D736 /* Preview Content */ = {
+		0FDC52BF25834C230017D736 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0FDC52B2258349EF0017D736 /* Preview Assets.xcassets */,
+				0FDC52C025834C230017D736 /* DataController.swift */,
+				0FDC52C125834C230017D736 /* HypedEvent.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0FDC52D625834FA50017D736 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FDC52D725834FA50017D736 /* HypedEventListView.swift */,
+				0FDC52D825834FA50017D736 /* HypedEventTileView.swift */,
+				0FDC52D925834FA50017D736 /* HypedEventDetailView.swift */,
+				0FDC52DA25834FA50017D736 /* PastView.swift */,
+				0FDC52DB25834FA50017D736 /* HypeThisSidebarView.swift */,
+				0FDC52DC25834FA50017D736 /* CreateHypedEventView.swift */,
+				0FDC52DD25834FA50017D736 /* ImagePicker.swift */,
+				0FDC52DE25834FA50017D736 /* DiscoverView.swift */,
+				0FDC52DF25834FA50017D736 /* UpcomingView.swift */,
+				0FDC52E025834FA50017D736 /* MainView.swift */,
+				0FDC52E125834FA50017D736 /* FormLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FDC52F7258354650017D736 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FDC52F8258354650017D736 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -85,6 +146,10 @@
 			dependencies = (
 			);
 			name = HypeThis2;
+			packageProductDependencies = (
+				0FDC52CA25834DF90017D736 /* SwiftDate */,
+				0FDC52CE25834E380017D736 /* UIColor_Hex_Swift */,
+			);
 			productName = HypeThis2;
 			productReference = 0FDC52A8258349EE0017D736 /* HypeThis2.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +177,10 @@
 				Base,
 			);
 			mainGroup = 0FDC529F258349EE0017D736;
+			packageReferences = (
+				0FDC52C925834DF90017D736 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				0FDC52CD25834E380017D736 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
+			);
 			productRefGroup = 0FDC52A9258349EE0017D736 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FDC52B3258349EF0017D736 /* Preview Assets.xcassets in Resources */,
-				0FDC52B0258349EF0017D736 /* Assets.xcassets in Resources */,
+				0FDC52F9258354650017D736 /* Preview Assets.xcassets in Resources */,
+				0FDC52F52583543A0017D736 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +207,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FDC52AE258349EE0017D736 /* ContentView.swift in Sources */,
+				0FDC52E325834FA50017D736 /* HypedEventTileView.swift in Sources */,
+				0FDC52EB25834FA50017D736 /* MainView.swift in Sources */,
+				0FDC52C725834D360017D736 /* HypeThisTabView.swift in Sources */,
+				0FDC52C225834C240017D736 /* DataController.swift in Sources */,
 				0FDC52AC258349EE0017D736 /* HypeThis2App.swift in Sources */,
+				0FDC52E625834FA50017D736 /* HypeThisSidebarView.swift in Sources */,
+				0FDC52E525834FA50017D736 /* PastView.swift in Sources */,
+				0FDC52EA25834FA50017D736 /* UpcomingView.swift in Sources */,
+				0FDC52E725834FA50017D736 /* CreateHypedEventView.swift in Sources */,
+				0FDC52E825834FA50017D736 /* ImagePicker.swift in Sources */,
+				0FDC52EC25834FA50017D736 /* FormLabelView.swift in Sources */,
+				0FDC52E425834FA50017D736 /* HypedEventDetailView.swift in Sources */,
+				0FDC52E225834FA50017D736 /* HypedEventListView.swift in Sources */,
+				0FDC52C325834C240017D736 /* HypedEvent.swift in Sources */,
+				0FDC52E925834FA50017D736 /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +410,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FDC52C925834DF90017D736 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		0FDC52CD25834E380017D736 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FDC52CA25834DF90017D736 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FDC52C925834DF90017D736 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		0FDC52CE25834E380017D736 /* UIColor_Hex_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FDC52CD25834E380017D736 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColor_Hex_Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FDC52A0258349EE0017D736 /* Project object */;
 }
