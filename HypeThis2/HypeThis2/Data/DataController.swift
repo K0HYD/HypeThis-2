@@ -53,7 +53,7 @@ class DataController: ObservableObject {
     
     func saveData() {
         DispatchQueue.global().async {
-            if let defaults = UserDefaults(suiteName: "group.com.zappycode.hypedlist") {
+            if let defaults = UserDefaults(suiteName: "group.net.k0hyd.hypethis2") {
                 let encoder = JSONEncoder()
                 if let encoded = try? encoder.encode(self.hypedEvents) {
                     defaults.setValue(encoded, forKey: "hypedEvents")
@@ -66,7 +66,7 @@ class DataController: ObservableObject {
     
     func loadData() {
         DispatchQueue.global().async {
-            if let defaults = UserDefaults(suiteName: "group.com.zappycode.hypedlist") {
+            if let defaults = UserDefaults(suiteName: "group.net.k0hyd.hypethis2") {
                 if let data = defaults.data(forKey: "hypedEvents") {
                     let decoder = JSONDecoder()
                     if let jsonHypedEvents = try? decoder.decode([HypedEvent].self, from: data) {
@@ -80,7 +80,7 @@ class DataController: ObservableObject {
     }
     
     func getUpcomingForWidget() -> [HypedEvent] {
-        if let defaults = UserDefaults(suiteName: "group.com.zappycode.hypedlist") {
+        if let defaults = UserDefaults(suiteName: "group.net.k0hyd.hypethis2") {
             if let data = defaults.data(forKey: "hypedEvents") {
                 let decoder = JSONDecoder()
                 if let jsonHypedEvents = try? decoder.decode([HypedEvent].self, from: data) {

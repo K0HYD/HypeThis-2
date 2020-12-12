@@ -88,6 +88,7 @@
 		0FDC52F8258354650017D736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FDC52FB258354A10017D736 /* HypeThisiOSWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypeThisiOSWidgetExtension.entitlements; sourceTree = "<group>"; };
 		0FDC52FC258354B40017D736 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF602A92584898500CA55CA /* HypeThis2iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypeThis2iOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +137,7 @@
 		0FDC529F258349EE0017D736 = {
 			isa = PBXGroup;
 			children = (
+				0FF602A92584898500CA55CA /* HypeThis2iOS.entitlements */,
 				0FDC52AA258349EE0017D736 /* HypeThis2 */,
 				0F3FE0B3258417E100FC2924 /* HypedListiOSWidget */,
 				0F3FE0AE258417E100FC2924 /* Frameworks */,
@@ -517,6 +519,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HypeThis2iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HypeThis2/Preview Content\"";
 				DEVELOPMENT_TEAM = DK64FQY4ZK;
@@ -540,6 +543,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HypeThis2iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HypeThis2/Preview Content\"";
 				DEVELOPMENT_TEAM = DK64FQY4ZK;
