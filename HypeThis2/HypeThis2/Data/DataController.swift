@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import SwiftUI
 import SwiftDate
 import UIColor_Hex_Swift
+import SwiftUI
 import WidgetKit
 
 class DataController: ObservableObject {

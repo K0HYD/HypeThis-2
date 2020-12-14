@@ -62,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F1A4FA22587406900BE5DDF /* HypedListiOSWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypedListiOSWidgetExtension.entitlements; sourceTree = "<group>"; };
 		0F3FE0AD258417E100FC2924 /* HypedListiOSWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HypedListiOSWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3FE0AF258417E100FC2924 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0F3FE0B1258417E100FC2924 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -137,6 +138,7 @@
 		0FDC529F258349EE0017D736 = {
 			isa = PBXGroup;
 			children = (
+				0F1A4FA22587406900BE5DDF /* HypedListiOSWidgetExtension.entitlements */,
 				0FF602A92584898500CA55CA /* HypeThis2iOS.entitlements */,
 				0FDC52AA258349EE0017D736 /* HypeThis2 */,
 				0F3FE0B3258417E100FC2924 /* HypedListiOSWidget */,
@@ -360,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HypedListiOSWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK64FQY4ZK;
 				INFOPLIST_FILE = HypedListiOSWidget/Info.plist;
@@ -381,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HypedListiOSWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK64FQY4ZK;
 				INFOPLIST_FILE = HypedListiOSWidget/Info.plist;

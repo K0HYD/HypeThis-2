@@ -10,13 +10,16 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> HypedEventEntry {
+        
         let placeholderHypedEvent = HypedEvent()
         placeholderHypedEvent.color = .green
         placeholderHypedEvent.title = "Loading..."
+        
         return HypedEventEntry(date: Date(), hypedEvent: placeholderHypedEvent)
     }
     
     func getSnapshot(in context: Context, completion: @escaping (HypedEventEntry) -> ()) {
+        
         let upcoming = DataController.shared.getUpcomingForWidget()
         
         var entry = HypedEventEntry(date: Date(), hypedEvent: testHypedEvent1)
@@ -24,6 +27,7 @@ struct Provider: TimelineProvider {
         if upcoming.count > 0 {
             entry = HypedEventEntry(date: Date(), hypedEvent: upcoming.randomElement())
         }
+    
         completion(entry)
     }
     
@@ -32,10 +36,9 @@ struct Provider: TimelineProvider {
         
         let upcoming = DataController.shared.getUpcomingForWidget()
         
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< upcoming.count {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
             let entry = HypedEventEntry(date: entryDate, hypedEvent: upcoming[hourOffset])
             entries.append(entry)
         }
@@ -89,7 +92,7 @@ struct HypedListiOSWidgetEntryView : View {
             } else {
                 VStack {
                     Spacer()
-                    Text("No upcoming Events. Tap me to add more awesome events!")
+                    Text("No Upcoming Events. Tap me to add events!")
                         .padding()
                         .multilineTextAlignment(.center)
                         .font(fontSize())
@@ -98,12 +101,17 @@ struct HypedListiOSWidgetEntryView : View {
             }
         }
     }
+    
     func fontSize() -> Font {
         switch widgetFamily {
-        case .systemSmall: return .title2
-        case .systemMedium: return .title
-        case .systemLarge: return .largeTitle
-        @unknown default: return .body
+        case .systemSmall:
+            return .title2
+        case .systemMedium:
+            return .title
+        case .systemLarge:
+            return .largeTitle
+        @unknown default:
+            return .body
         }
     }
 }
@@ -116,8 +124,8 @@ struct HypedListiOSWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             HypedListiOSWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Hyped Event Widget")
-        .description("See your Upcoming Events!")
+        .configurationDisplayName("HypedEvent Widget")
+        .description("See your upcoming events!")
     }
 }
 
@@ -126,28 +134,22 @@ struct HypedListiOSWidget_Previews: PreviewProvider {
         Group {
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: testHypedEvent1))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: testHypedEvent1))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: testHypedEvent1))
                 .previewContext(WidgetPreviewContext(family: .systemLarge))
             
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: testHypedEvent2))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: testHypedEvent2))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: testHypedEvent2))
                 .previewContext(WidgetPreviewContext(family: .systemLarge))
             
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: nil))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: nil))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
-            
             HypedListiOSWidgetEntryView(entry: HypedEventEntry(date: Date(), hypedEvent: nil))
                 .previewContext(WidgetPreviewContext(family: .systemLarge))
         }
