@@ -35,10 +35,10 @@ struct Provider: TimelineProvider {
         var entries: [HypedEventEntry] = []
         
         let upcoming = DataController.shared.getUpcomingForWidget()
-        
+         
         let currentDate = Date()
         for hourOffset in 0 ..< upcoming.count {
-            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
+            let entryDate = Calendar.current.date(byAdding: .minute, value: hourOffset, to: currentDate)!
             let entry = HypedEventEntry(date: entryDate, hypedEvent: upcoming[hourOffset])
             entries.append(entry)
         }
