@@ -18,7 +18,6 @@
 		0F3FE0CD25841E8500FC2924 /* UIColor_Hex_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3FE0CC25841E8500FC2924 /* UIColor_Hex_Swift */; };
 		0F4965F32589D1E00096D25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4965F22589D1E00096D25E /* Assets.xcassets */; };
 		0F4965FA2589D1E00096D25E /* HypeThis2Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0F4965F92589D1E00096D25E /* HypeThis2Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0F4965FF2589D1E00096D25E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4965FE2589D1E00096D25E /* ContentView.swift */; };
 		0F4966012589D1E00096D25E /* HypeThis2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4966002589D1E00096D25E /* HypeThis2App.swift */; };
 		0F4966032589D1E00096D25E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4966022589D1E00096D25E /* ComplicationController.swift */; };
 		0F4966052589D1E00096D25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4966042589D1E00096D25E /* Assets.xcassets */; };
@@ -49,6 +48,8 @@
 		0FDC52EC25834FA50017D736 /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52E125834FA50017D736 /* FormLabelView.swift */; };
 		0FDC52F52583543A0017D736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC52F42583543A0017D736 /* Assets.xcassets */; };
 		0FDC52F9258354650017D736 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC52F8258354650017D736 /* Preview Assets.xcassets */; };
+		0FF8745A258B254600F081DC /* WatchToPhoneDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF87459258B254600F081DC /* WatchToPhoneDataController.swift */; };
+		0FF87486258B350500F081DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4965FE2589D1E00096D25E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		0FDC52F8258354650017D736 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FDC52FC258354B40017D736 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF602A92584898500CA55CA /* HypeThis2iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HypeThis2iOS.entitlements; sourceTree = "<group>"; };
+		0FF87459258B254600F081DC /* WatchToPhoneDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchToPhoneDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 				0FDC52C025834C230017D736 /* DataController.swift */,
 				0FDC52C125834C230017D736 /* HypedEvent.swift */,
 				0F4966302589E85C0096D25E /* PhoneToWatchDataController.swift */,
+				0FF87459258B254600F081DC /* WatchToPhoneDataController.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -499,10 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF8745A258B254600F081DC /* WatchToPhoneDataController.swift in Sources */,
 				0F4966012589D1E00096D25E /* HypeThis2App.swift in Sources */,
+				0FF87486258B350500F081DC /* ContentView.swift in Sources */,
 				0F49661F2589D4AD0096D25E /* HypedEvent.swift in Sources */,
 				0F49661A2589D43E0096D25E /* HypeThis2WatchListView.swift in Sources */,
-				0F4965FF2589D1E00096D25E /* ContentView.swift in Sources */,
 				0F4966032589D1E00096D25E /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
