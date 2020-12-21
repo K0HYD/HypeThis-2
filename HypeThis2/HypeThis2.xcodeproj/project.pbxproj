@@ -23,7 +23,7 @@
 		0F4966052589D1E00096D25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4966042589D1E00096D25E /* Assets.xcassets */; };
 		0F4966082589D1E00096D25E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4966072589D1E00096D25E /* Preview Assets.xcassets */; };
 		0F49660C2589D1E00096D25E /* HypeThis2Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0F4965F02589D1DF0096D25E /* HypeThis2Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0F49661A2589D43E0096D25E /* HypeThis2WatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4966192589D43E0096D25E /* HypeThis2WatchListView.swift */; };
+		0F49661A2589D43E0096D25E /* HypedEventWatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4966192589D43E0096D25E /* HypedEventWatchListView.swift */; };
 		0F49661F2589D4AD0096D25E /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC52C125834C230017D736 /* HypedEvent.swift */; };
 		0F4966252589D5AB0096D25E /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 0F4966242589D5AB0096D25E /* SwiftDate */; };
 		0F4966272589D5AB0096D25E /* UIColor_Hex_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F4966262589D5AB0096D25E /* UIColor_Hex_Swift */; };
@@ -130,7 +130,7 @@
 		0F4966042589D1E00096D25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4966072589D1E00096D25E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F4966092589D1E00096D25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F4966192589D43E0096D25E /* HypeThis2WatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeThis2WatchListView.swift; sourceTree = "<group>"; };
+		0F4966192589D43E0096D25E /* HypedEventWatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventWatchListView.swift; sourceTree = "<group>"; };
 		0F4966302589E85C0096D25E /* PhoneToWatchDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneToWatchDataController.swift; sourceTree = "<group>"; };
 		0FDC52A8258349EE0017D736 /* HypeThis2iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeThis2iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDC52AB258349EE0017D736 /* HypeThis2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeThis2App.swift; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 				0F4966042589D1E00096D25E /* Assets.xcassets */,
 				0F4966092589D1E00096D25E /* Info.plist */,
 				0F4966062589D1E00096D25E /* Preview Content */,
-				0F4966192589D43E0096D25E /* HypeThis2WatchListView.swift */,
+				0F4966192589D43E0096D25E /* HypedEventWatchListView.swift */,
 			);
 			path = "HypeThis2Watch Extension";
 			sourceTree = "<group>";
@@ -266,13 +266,15 @@
 			isa = PBXGroup;
 			children = (
 				0FF602A92584898500CA55CA /* HypeThis2iOS.entitlements */,
-				0FDC52F42583543A0017D736 /* Assets.xcassets */,
-				0FDC52BF25834C230017D736 /* Data */,
-				0FDC52F7258354650017D736 /* Preview Content */,
-				0FDC52D625834FA50017D736 /* Views */,
 				0FDC52AB258349EE0017D736 /* HypeThis2App.swift */,
+				0FDC52E025834FA50017D736 /* MainView.swift */,
+				0FDC52DB25834FA50017D736 /* HypeThisSidebarView.swift */,
 				0FDC52C625834D360017D736 /* HypeThisTabView.swift */,
+				0FDC52D625834FA50017D736 /* Views */,
+				0FDC52BF25834C230017D736 /* Data */,
+				0FDC52F42583543A0017D736 /* Assets.xcassets */,
 				0FDC52FC258354B40017D736 /* Info.plist */,
+				0FDC52F7258354650017D736 /* Preview Content */,
 			);
 			path = HypeThis2;
 			sourceTree = "<group>";
@@ -295,12 +297,10 @@
 				0FDC52D825834FA50017D736 /* HypedEventTileView.swift */,
 				0FDC52D925834FA50017D736 /* HypedEventDetailView.swift */,
 				0FDC52DA25834FA50017D736 /* PastView.swift */,
-				0FDC52DB25834FA50017D736 /* HypeThisSidebarView.swift */,
 				0FDC52DC25834FA50017D736 /* CreateHypedEventView.swift */,
 				0FDC52DD25834FA50017D736 /* ImagePicker.swift */,
 				0FDC52DE25834FA50017D736 /* DiscoverView.swift */,
 				0FDC52DF25834FA50017D736 /* UpcomingView.swift */,
-				0FDC52E025834FA50017D736 /* MainView.swift */,
 				0FDC52E125834FA50017D736 /* FormLabelView.swift */,
 			);
 			path = Views;
@@ -506,7 +506,7 @@
 				0F4966012589D1E00096D25E /* HypeThis2App.swift in Sources */,
 				0FF87486258B350500F081DC /* ContentView.swift in Sources */,
 				0F49661F2589D4AD0096D25E /* HypedEvent.swift in Sources */,
-				0F49661A2589D43E0096D25E /* HypeThis2WatchListView.swift in Sources */,
+				0F49661A2589D43E0096D25E /* HypedEventWatchListView.swift in Sources */,
 				0F4966032589D1E00096D25E /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,6 +745,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -799,6 +800,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -815,7 +817,7 @@
 				DEVELOPMENT_TEAM = DK64FQY4ZK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HypeThis2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -839,7 +841,7 @@
 				DEVELOPMENT_TEAM = DK64FQY4ZK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HypeThis2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
